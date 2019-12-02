@@ -42,7 +42,7 @@
      2.局部变量表主要存放了编译器可知的各种数据类型、对象引用。
      3.Java虚拟机栈会出现两种异常。
      4.Java虚拟机栈线程私有的，每个线程都有各自的Java虚拟机栈，而且        随着线程的创建而创建，随着线程的死亡而死亡。
-     5.虚拟机栈为执行Java方法服务
+     5.虚拟机栈为执行Java方法服务 
 ```
 
 
@@ -91,7 +91,7 @@ JDK1.8的时候方法区（HotSpot的永久代）被彻底移除了，取而代�
 
 ​										Jdk1.8之前（上图）和之后（下图）
 
-![image-20191129164645123](C:\Users\l\AppData\Roaming\Typora\typora-user-images\image-20191129164645123.png)
+![image-20191202091258245](C:\Users\l\AppData\Roaming\Typora\typora-user-images\image-20191202091258245.png)
 
 
 
