@@ -73,7 +73,7 @@
 
 ![image-20191129150702878](C:\Users\l\AppData\Roaming\Typora\typora-user-images\image-20191129150702878.png)
 
-
+更改：s0和S1是两块大小一样的内存区域，两块是因为回收算法是复制回收算法，新生代回收后存活的要么在S0要么在S1，其中一个，当再经过垃圾回收，存活的复制到另一块
 
 ### 1.5、方法区
 
@@ -110,4 +110,26 @@ JDK1.8的时候方法区（HotSpot的永久代）被彻底移除了，取而代�
 ### 1.7、直接内存
 
 ​		并不是虚拟机运行时数据区的一部分，这部分内存也被频繁使用，也可能导致OutOfMemoryError异常。
+
+
+
+
+
+### 视频学习：
+
+![image-20191210101848900](C:\Users\l\AppData\Roaming\Typora\typora-user-images\image-20191210101848900.png)
+
+
+
+堆分配参数：
+
+-XX:+PrintGC 使用这个参数，虚拟机启动后，只要遇到GC就会打印日志
+
+-XX:+UseSerialGC 配置串行回收器
+
+-XX:+PrintGCDetails 可以查看详细信息，包括各个区的情况
+
+-Xms: 设置java程序启动时初始堆大小
+
+-Xmx:设置java程序能获得的最大堆大小
 
